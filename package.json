@@ -1,0 +1,19 @@
+{
+  "name": "device-fleet-monitor",
+  "version": "1.0.0",
+  "description": "Device fleet monitoring application with heartbeat tracking",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "jest --runInBand",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^30.0.0",
+    "supertest": "^7.1.4"
+  }
+}
