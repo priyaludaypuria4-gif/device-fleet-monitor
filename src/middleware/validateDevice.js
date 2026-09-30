@@ -1,10 +1,9 @@
-```javascript
 function validateDevice(req, res, next) {
   const { name, ipAddress, status } = req.body;
 
   const errors = [];
 
-  if (!name || typeof name !== 'string' || name.trim().length === 0) {
+  if (!name || typeof name !== 'string' || name.trim() === '') {
     errors.push('name is required and must be a non-empty string');
   }
 
@@ -33,4 +32,3 @@ function validateDevice(req, res, next) {
 }
 
 module.exports = validateDevice;
-```
