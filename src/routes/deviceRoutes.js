@@ -4,8 +4,10 @@ const controller = require('../controllers/deviceController');
 
 const router = express.Router();
 
+const validateDevice = require('../middleware/validateDevice');
+
 // Register a device
-router.post('/devices', controller.registerDevice);
+router.post('/devices', validateDevice, controller.registerDevice);
 
 // Send heartbeat
 router.post('/devices/:id/heartbeat', controller.heartbeat);
