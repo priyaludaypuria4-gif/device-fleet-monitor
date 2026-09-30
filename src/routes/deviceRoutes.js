@@ -1,10 +1,10 @@
+
 const express = require('express');
 
 const controller = require('../controllers/deviceController');
+const validateDevice = require('../middleware/validateDevice');
 
 const router = express.Router();
-
-const validateDevice = require('../middleware/validateDevice');
 
 // Register a device
 router.post('/devices', validateDevice, controller.registerDevice);
@@ -22,3 +22,4 @@ router.get('/fleet/summary', controller.getFleetSummary);
 router.get('/devices/:id', controller.getDevice);
 
 module.exports = router;
+```
