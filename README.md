@@ -636,6 +636,11 @@ I verified that:
 *The remaining simulated devices continued to report ONLINE.
 *I also ran the automated test suite with: npm test.
 
+*Prompts I used:
+*use node.js and express.js and give the codes that would help to implement the project here.
+*I added these changes Input validation and API documentation customize a readme according to this.
+
+
 
 
 
